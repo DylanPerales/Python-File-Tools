@@ -2,7 +2,7 @@ import os
 import sys
 import shutil
 
-# String Arrays for OPPR Servers
+# String Array for desired hosts to copy to
 hostList = ["host1","host2","host3"]
 
 # Function to Copy a File
