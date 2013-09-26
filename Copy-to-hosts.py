@@ -23,8 +23,8 @@ def copy_folder( src, dest ):
             print ("Copied: {0} to {1}".format(src, destPath))
         except shutil.Error as e:
             print ("Error copying: ({0}): {1} - {2} to {3}".format(e.errno, e.strerror, src, destPath))
-if len(sys.argv) == 1:
-    print ("Error: Invalid Syntax")
+if len(sys.argv) != 4:
+    print ("Error: Invalid Arguments")
     print ("Usage: copy-to-host.py file-or-folder-to-copy dest-path")
 elif os.path.exists(sys.argv[1]): # Check for valid Path
         if os.path.isfile(sys.argv[1]):
