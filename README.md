@@ -5,6 +5,7 @@ Misc. Python tools used for file operations (Copy, Rename, etc.)
 Originally geared towards work stuff, modifying for personal use.
 All scripts used are intended for recursive use.
 
+
 ### Copy-to-hosts.py
 
 Used to copy a file or folder (recursively), to multiple hosts.
@@ -13,11 +14,13 @@ This will possibly be modified to a host list.
 #### Usage:
 `copy-to-host.py \file-or-folder-to-copy \dest-path`
 
+
 ### Decapitalizer.py
 
 Used to remove any capitalization (again recursively) within a folder.
 #### Usage:
 `Decapitalizer.py \DirToRename\`
+
 
 ### FilenameReplacer.py
 
