@@ -13,11 +13,8 @@ def lowercase_rename( dir ):
         rename_all(root,dirs)
         rename_all(root,files)
 
-if len(sys.argv) == 1:
-    print ("Error: Invalid Syntax")
-    print ("Usage: dirRenameLower.py \\DirToRename\\")
-elif len(sys.argv) > 2:
-    print ("Error: Too Many Arguments")
+if len(sys.argv) != 2:
+    print ("Error: Invalid Arguments")
     print ("Usage: dirRenameLower.py \\DirToRename\\")
 else:
     if os.path.isdir(sys.argv[1]):
