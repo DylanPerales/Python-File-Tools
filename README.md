@@ -10,20 +10,20 @@ All scripts used are intended for recursive use.
 Used to copy a file or folder (recursively), to multiple hosts.
 Modify the **hostList** string array to the desired host list.
 #### Usage:
-'copy-to-host.py \file-or-folder-to-copy \dest-path'
+`copy-to-host.py \file-or-folder-to-copy \dest-path`
 
 ### Decapitalizer.py
 
 Used to remove any capitalization (again recursively) within a folder.
 #### Usage:
-'Decapitalizer.py \DirToRename\'
+`Decapitalizer.py \DirToRename\`
 
 ### FilenameReplacer.py
 
 Used to modify multiple files filenames, replacing chars within filename (e.x. '-' to '_').
 #### Usage:
-'FilenameReplacer.py \DirToRename\ srcChar destChar'
-Example: "FilenameReplacer.py \txtfiles\ - _"
+`FilenameReplacer.py \DirToRename\ srcChar destChar`
+Example: `FilenameReplacer.py \txtfiles\ - _`
 ##### Before:
 --* \txtfiles\file-1.txt 
 --* \txtfiles\file-2.txt 
