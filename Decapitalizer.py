@@ -15,7 +15,7 @@ def lowercase_rename( dir ):
         rename_all(root,dirs)
         rename_all(root,files)
 
-# Validate we have proper amount of switches
+# Validate proper number of arguments
 if len(sys.argv) != 2:
     print ("Error: Invalid Arguments")
     print ("Usage: dirRenameLower.py \\DirToRename\\")
