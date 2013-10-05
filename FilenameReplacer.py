@@ -1,6 +1,7 @@
 import os
 import sys
 
+# Main function takes directory, original and desired characters to replace
 def rename_file( dir, src, dest ):
     def rename_all( root, items ):
         for name in items:
@@ -15,7 +16,8 @@ def rename_file( dir, src, dest ):
         rename_all(root,dirs)
         rename_all(root,files)
         
-if len(sys.argv) != 4: # Check for too many arguments
+# Validate proper number of arguments
+if len(sys.argv) != 4:
     print ("Error: Invalid Arguments")
     print ("Usage: FilenameReplacer.py \\DirToRename\\ srcChar destChar")
 else:
