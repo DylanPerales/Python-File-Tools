@@ -1,5 +1,6 @@
 import os
 import sys
+
 # Removes capitalization recursively in a directory
 def lowercase_rename( dir ):
     def rename_all( root, items ):
@@ -8,11 +9,13 @@ def lowercase_rename( dir ):
                 os.rename(os.path.join(root, name),os.path.join(root, name.lower()))
             except OSError:
                 print ("Unable to rename: " + name)
+                
 # Starts from the bottom so paths further up remain valid after renaming
     for root, dirs, files in os.walk( dir, topdown=False ):
         rename_all(root,dirs)
         rename_all(root,files)
 
+# Validate we have proper amount of switches
 if len(sys.argv) != 2:
     print ("Error: Invalid Arguments")
     print ("Usage: dirRenameLower.py \\DirToRename\\")
