@@ -14,6 +14,7 @@ def copy_file( src, dest ):
             print ("Copied: {0} to {1}".format(src, destPath))
         except shutil.Error as e:
             print ("Error copying: ({0}): {1} - {2} to {3}".format(e.errno, e.strerror, src, destPath))
+            
 # Function to Copy a Folder
 def copy_folder( src, dest ):
     for host in hostList:
@@ -23,6 +24,8 @@ def copy_folder( src, dest ):
             print ("Copied: {0} to {1}".format(src, destPath))
         except shutil.Error as e:
             print ("Error copying: ({0}): {1} - {2} to {3}".format(e.errno, e.strerror, src, destPath))
+            
+# Validate proper number of arguments
 if len(sys.argv) != 4:
     print ("Error: Invalid Arguments")
     print ("Usage: copy-to-host.py file-or-folder-to-copy dest-path")
