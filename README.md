@@ -31,11 +31,16 @@ Used to modify multiple files filenames, replacing strings within filename (e.x.
 The program will then ask for the Directory to search, string to replace and what to replace it with
 Example: 
 
->Enter directory of contents you wish to rename: E:\Test\n
+>Enter directory of contents you wish to rename: E:\Test<br />
+
 >Enter name or string to replace: - <br />
+
 >Enter desired name or string: _ <br />
+
 >Renamed: file-1.txt to file_1.txt <br />
+
 >Renamed: file-2.txt to file_2.txt <br />
+
 >Renamed: file-3.txt to file_3.txt
 
 ##### Before:
